@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+header{
+    border: 1px solid red;
+    height: 80px;
+}
+
+.claseheader{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    
+}
+header img{
+    height: 50px;
+    width: 50px;
+}
+@media(min-width:426px) and (max-width:768px){
+    header{
+        background-color: yellow;
+        justify-content: center;
+    }
+    header img{
+        display: none;
+    }
+    ul{
+        width:768px;
+    }
+}
+
+@media(max-width:425px){
+    header{
+        background-color: green;
+    }
+    header img{
+        display: none;
+    }
+}
+
+@media(min-width:769px){
+    header{
+        background-color: violet;
+    }
+}
